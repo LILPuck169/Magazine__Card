@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: paleturquoise;
+  /* font-family: "Noto Sans TC", sans-serif; */
+}
+
+/* :root { */
+/* Тут хранятся переменные! */
+/* --border-radius: 4px;
+    --font-family: "Mulish", Arial, sans-serif; */
+/*Тут хранятся общие стили, которые применяются 
+  к файлу  */
+/* background-color: #f6f6f6;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+/* } */
+
+.container {
+  max-width: 1440px;
+  /* height: 1074px; */
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.first__box {
+  background: rgb(255, 255, 255);
+  padding: 245px 132px 296px 132px;
+  position: relative;
+}
+
+.title__chair {
+  border: 2px solid rgba(45, 46, 50, 0.19);
+  border-radius: 12px;
+  position: absolute;
+  width: 98px;
+  height: 39px;
+  left: 35px;
+  top: 72px;
+}
+.text__chair {
+  color: rgba(45, 46, 50, 0.47);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 9px 18px;
+}
+.button__box {
+  position: absolute;
+  width: 101px;
+  height: 25px;
+  left: 310px;
+  right: 1029px;
+  top: 963px;
+  bottom: 86px;
+}
+.chair__button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+}
+.chair__button:active {
+  background-color: yellow;
+}
+.second__box {
+  background: rgb(45, 46, 50);
+  padding: 111px 60px 81px 82px;
+  /* padding: 111px 140px 81px 132px; */
+  position: relative;
+}
+.text__chairs {
+  color: rgb(237, 196, 44);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.text__description {
+  color: rgb(255, 255, 255);
+  font-family: Noto Sans TC;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: -3%;
+  text-align: left;
+  /* max-width: 440px; Это правильный размер */
+  max-width: 640px;
+}
