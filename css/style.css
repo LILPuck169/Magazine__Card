@@ -7,28 +7,26 @@ html {
 *::before {
   box-sizing: inherit;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: paleturquoise;
-  /* font-family: "Noto Sans TC", sans-serif; */
-}
 
-/* :root { */
-/* Тут хранятся переменные! */
-/* --border-radius: 4px;
-    --font-family: "Mulish", Arial, sans-serif; */
-/*Тут хранятся общие стили, которые применяются 
+:root {
+  /* Тут хранятся переменные! */
+  --font-family: "Roboto", sans-serif;
+  --font-family-2: "Noto Sans TC", sans-serif;
+  --letter-spacing: 0%;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+
+  /*Тут хранятся общие стили, которые применяются 
   к файлу  */
-/* background-color: #f6f6f6;
+  background-color: paleturquoise;
   font-family: var(--font-family);
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal; */
-/* } */
+  font-style: normal;
+}
 
 .container {
   max-width: 1440px;
-  /* height: 1074px; */
   border: 1px solid red;
   margin: auto;
   display: flex;
@@ -38,31 +36,31 @@ body {
   background: rgb(255, 255, 255);
   padding: 245px 132px 296px 132px;
   position: relative;
+  flex: 1;
+  /* Тоже не особо уловил связь */
 }
 
 .title__chair {
   border: 2px solid rgba(45, 46, 50, 0.19);
   border-radius: 12px;
   position: absolute;
-  width: 98px;
-  height: 39px;
+  /* width: 98px; */
+  /* height: 39px; */
   left: 35px;
   top: 72px;
 }
 .text__chair {
   color: rgba(45, 46, 50, 0.47);
-  font-family: Roboto;
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0%;
+  letter-spacing: var(--letter-spacing);
   text-align: center;
   padding: 9px 18px;
 }
 .button__box {
   position: absolute;
   width: 101px;
-  height: 25px;
+  /* height: 25px; */
   left: 310px;
   right: 1029px;
   top: 963px;
@@ -83,24 +81,182 @@ body {
   padding: 111px 60px 81px 82px;
   /* padding: 111px 140px 81px 132px; */
   position: relative;
+  flex: 2;
+  /* Вообще не понял как оно сработало */
 }
 .text__chairs {
   color: rgb(237, 196, 44);
-  font-family: Roboto;
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0%;
+  letter-spacing: var(--letter-spacing);
   text-align: left;
 }
 .text__description {
   color: rgb(255, 255, 255);
-  font-family: Noto Sans TC;
+  font-family: var(--font-family-2);
   font-size: 46px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   line-height: 67px;
   letter-spacing: -3%;
   text-align: left;
   /* max-width: 440px; Это правильный размер */
   max-width: 640px;
+}
+.tinners__house {
+  color: rgb(185, 185, 185);
+  font-style: italic;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.5%;
+  text-align: left;
+}
+.content__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptions__box {
+  display: flex;
+  gap: 43px;
+  padding-top: 45px;
+}
+.descrip__txt {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  line-height: 33px;
+  letter-spacing: -3.5%;
+  text-align: left;
+}
+.descrip__txt-grey {
+  color: rgb(189, 188, 188);
+  font-size: 26px;
+  font-weight: var(--font-weight-bold);
+  line-height: 30px;
+  letter-spacing: -3.5%;
+  text-align: left;
+}
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+  /* margin-bottom: 10px; */
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.progress {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(237, 196, 44);
+}
+.lorem__txt {
+  font-family: var(--font-family-2);
+  font-size: 26px;
+  font-weight: var(--font-weight-regular);
+  line-height: 38px;
+  letter-spacing: -3%;
+  text-align: left;
+  color: rgb(189, 188, 188);
+  margin-bottom: 76px;
+}
+.yellow__txt {
+  color: rgb(237, 196, 44);
+}
+.descriptions__box2 {
+  display: flex;
+  gap: 55px;
+}
+.descrip {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: var(--font-weight-regular);
+  line-height: 30px;
+  letter-spacing: -3.5%;
+  text-align: left;
+}
+.desrip__right {
+  margin-right: 20px;
+}
+.color__box {
+  margin-top: 24px;
+  display: flex;
+  gap: 55px;
+}
+.color {
+  width: 93px;
+  /* height: 60px; */
+  box-sizing: border-box;
+  border: 2px solid rgb(38, 39, 42);
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(38, 39, 42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.circle {
+  background: rgb(237, 196, 44);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+  /* height: 60px; */
+  box-sizing: border-box;
+  border: 2px solid rgb(38, 39, 42);
+  border-radius: 36px;
+  background: rgb(38, 39, 42);
+}
+.calculated {
+  font-size: 29px;
+  line-height: 34px;
+  letter-spacing: var(--letter-spacing);
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.totalPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  /* height: 60px; */
+  box-sizing: border-box;
+  border: 2px solid rgb(38, 39, 42);
+  border-radius: 36px;
+  background: rgb(38, 39, 42);
+}
+.addToMyWishlist {
+  margin-top: 54px;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: var(--font-weight-bold);
+  line-height: 30px;
+  letter-spacing: -3.5%;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 36px;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  margin-bottom: 27px;
+}
+.addToCard {
+  color: rgb(45, 46, 50);
+  font-size: 26px;
+  font-weight: var(--font-weight-bold);
+  line-height: 30px;
+  letter-spacing: -3.5%;
+  width: 100%;
+  height: 60px;
+  border-radius: 36px;
+  background: rgb(237, 196, 44);
 }
