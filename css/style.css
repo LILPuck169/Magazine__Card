@@ -73,7 +73,10 @@ html {
   background-color: gray;
   border: none;
 }
-.chair__button:active {
+/* .chair__button:active {
+  background-color: yellow;
+} */
+.active {
   background-color: yellow;
 }
 .second__box {
