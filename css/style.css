@@ -73,7 +73,10 @@ html {
   background-color: gray;
   border: none;
 }
-.chair__button:active {
+/* .chair__button:active {
+  background-color: yellow;
+} */
+.active {
   background-color: yellow;
 }
 .second__box {
@@ -259,4 +262,8 @@ html {
   height: 60px;
   border-radius: 36px;
   background: rgb(237, 196, 44);
+}
+
+.chair__card:not(.is-active) {
+  display: none;
 }
